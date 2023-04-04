@@ -29,7 +29,7 @@ class MyContainer extends StatelessWidget {
         backgroundColor: Colors.teal,
         centerTitle: true,
       ),
-      body: const MyChangeNotifier(),
+      body: MyChangeNotifier(),
     );
   }
 }
