@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_change_notifier/my2_change_notifier.dart';
 import 'package:flutter_change_notifier/my_change_notifier.dart';
+import 'package:flutter_change_notifier/my_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +32,8 @@ class MyContainer extends StatelessWidget {
         centerTitle: true,
       ),
       // body: MyChangeNotifier(),
-      body: My2ChangeNotifier(),
+      // body: My2ChangeNotifier(),
+      body: MyList(),
     );
   }
 }
