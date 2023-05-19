@@ -3,6 +3,10 @@ import 'package:flutter_change_notifier/my2_change_notifier.dart';
 import 'package:flutter_change_notifier/my_change_notifier.dart';
 import 'package:flutter_change_notifier/my_list.dart';
 
+import 'my_test.dart';
+import 'my_test2.dart';
+import 'my_test3.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -33,7 +37,14 @@ class MyContainer extends StatelessWidget {
       ),
       // body: MyChangeNotifier(),
       // body: My2ChangeNotifier(),
-      body: MyList(),
+      // body: Row(
+      //   children: const <Widget>[
+      //     Expanded(child: MyTest()),
+      //     Expanded(child: MyTest2()),
+      //   ],
+      // ),
+      body: const MyTest3(),
+      // body: MyList(),
     );
   }
 }
