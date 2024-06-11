@@ -48,8 +48,8 @@ class MyContainer extends StatelessWidget {
       // body: const MyTest3(),
       // body: MyList(),
       //
-      body: MyCounter(),
-      // body: MyView(),
+      // body: MyCounter(),
+      body: MyView(),
     );
   }
 }

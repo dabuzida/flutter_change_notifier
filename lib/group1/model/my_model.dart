@@ -3,6 +3,6 @@ class MyModel {
   MyModel._internal();
   static final MyModel _instance = MyModel._internal();
 
-  String title = '';
+  String title = '12345';
   final List<int> listInt = <int>[];
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'count_model.dart';
+import 'my_count_model.dart';
 
 class MyCounter extends StatelessWidget {
   MyCounter({super.key});
