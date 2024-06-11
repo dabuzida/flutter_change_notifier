@@ -8,7 +8,7 @@ class MyTest3 extends StatefulWidget {
 }
 
 class _MyTest3State extends State<MyTest3> {
-  final ValueNotifier<String?> _string = ValueNotifier('side');
+  final ValueNotifier<String?> _string = ValueNotifier(null);
 
   @override
   Widget build(BuildContext context) {
@@ -23,27 +23,12 @@ class _MyTest3State extends State<MyTest3> {
   }
 
   Widget _showValues() {
-    List<Widget> widgets = <Widget>[
-      const Text('@@@'),
-      const SizedBox(height: 30),
-    ];
-    widgets.add(_showValue());
-    widgets.add(const SizedBox(height: 30));
-    widgets.add(const Text('###'));
-
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: widgets,
-    );
-  }
-
-  Widget _showValue() {
     return AnimatedBuilder(
       animation: _string,
       builder: (BuildContext context, Widget? child) {
-        print('call AnimatedBuilder');
+        print('call animated');
         return Text(
-          _string.value ?? 'Null',
+          _string.value.toString(),
         );
       },
     );
@@ -57,7 +42,7 @@ class _MyTest3State extends State<MyTest3> {
           onPressed: () {
             _string.value = null;
           },
-          child: const Text('Null'),
+          child: const Text('null'),
         ),
         const SizedBox(height: 30),
         ElevatedButton(
